@@ -1,0 +1,15 @@
+---
+- name: Copy "{{Stacks}}" to machine
+  copy:
+    src: "{{ item }}.yml"
+    dest: /swarm/
+  with_items: "{{stacks}}"
+  when:
+    inventory_hostname == 'seed_manager'
+
+- name: Create Stack "{{project}}"
+  shell: >
+    docker stack deploy --compose-file "/swarm/{{item}}.yml" "{{project}}_{{item}}"
+  with_items: "{{stacks}}"
+  when:
+    inventory_hostname == 'seed_manager'

@@ -1,0 +1,111 @@
+[
+
+[
+[[red, 7, true], [red, 2, fail], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 8, true], [red, 2, fail], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 9, true], [red, 2, fail], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]],
+[[red, 1, true], [red, 7, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]],
+[[red, 1, true], [red, 8, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]],
+[[red, 1, true], [red, 9, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]],
+[[red, 1, true], [red, 2, fail], [red, 7, true], [black, 4, true], [black, 5, fail], [black, 6, true]],
+[[red, 1, true], [red, 2, fail], [red, 8, true], [black, 4, true], [black, 5, fail], [black, 6, true]],
+[[red, 1, true], [red, 2, fail], [red, 9, true], [black, 4, true], [black, 5, fail], [black, 6, true]]
+],
+
+[
+[[red, 1, true], [red, 2, fail], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]],
+[[red, 7, true], [red, 2, fail], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 9, true], [red, 2, fail], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 8, true], [red, 1, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]],
+[[red, 8, true], [red, 7, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]],
+[[red, 8, true], [red, 9, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 8, true], [red, 2, fail], [red, 1, true], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 8, true], [red, 2, fail], [red, 7, true], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 8, true], [red, 2, fail], [red, 9, true], [black, 4, true], [black, 5, fail], [black, 6, true]]
+], 
+
+[
+[[red, 1, true], [red, 2, fail], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 7, true], [red, 2, fail], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 8, true], [red, 2, fail], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]],
+[[red, 9, true], [red, 1, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]],
+[[red, 9, true], [red, 7, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]],
+[[red, 9, true], [red, 8, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 9, true], [red, 2, fail], [red, 1, true], [black, 4, true], [black, 5, fail], [black, 6, true]],
+[[red, 9, true], [red, 2, fail], [red, 7, true], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 9, true], [red, 2, fail], [red, 8, true], [black, 4, true], [black, 5, fail], [black, 6, true]]
+],
+
+[
+[[red, 2, true], [red, 1, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]],
+[[red, 8, true], [red, 1, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 9, true], [red, 1, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 7, true], [red, 2, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 7, true], [red, 8, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 7, true], [red, 9, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 7, true], [red, 1, true], [red, 2, true], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 7, true], [red, 1, true], [red, 8, true], [black, 4, true], [black, 5, fail], [black, 6, true]],
+[[red, 7, true], [red, 1, true], [red, 9, true], [black, 4, true], [black, 5, fail], [black, 6, true]]
+],
+
+[
+[[red, 1, true], [red, 8, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]],
+[[red, 2, true], [red, 8, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 9, true], [red, 8, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]],
+[[red, 7, true], [red, 1, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 7, true], [red, 2, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 7, true], [red, 9, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 7, true], [red, 8, true], [red, 1, true], [black, 4, true], [black, 5, fail], [black, 6, true]],
+[[red, 7, true], [red, 8, true], [red, 2, true], [black, 4, true], [black, 5, fail], [black, 6, true]],
+[[red, 7, true], [red, 8, true], [red, 9, true], [black, 4, true], [black, 5, fail], [black, 6, true]]
+],
+
+[
+[[red, 1, true], [red, 9, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 2, true], [red, 9, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 8, true], [red, 9, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 7, true], [red, 1, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 7, true], [red, 2, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 7, true], [red, 8, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 7, true], [red, 9, true], [red, 1, true], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 7, true], [red, 9, true], [red, 2, true], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 7, true], [red, 9, true], [red, 8, true], [black, 4, true], [black, 5, fail], [black, 6, true]]
+],
+
+[
+[[red, 3, true], [red, 2, fail], [red, 1, true], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 8, true], [red, 2, fail], [red, 1, true], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 9, true], [red, 2, fail], [red, 1, true], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 7, true], [red, 3, true], [red, 1, true], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 7, true], [red, 8, true], [red, 1, true], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 7, true], [red, 9, true], [red, 1, true], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 7, true], [red, 2, fail], [red, 3, true], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 7, true], [red, 2, fail], [red, 8, true], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 7, true], [red, 2, fail], [red, 9, true], [black, 4, true], [black, 5, fail], [black, 6, true]]
+],
+
+[
+[[red, 1, true], [red, 2, fail], [red, 8, true], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 3, true], [red, 2, fail], [red, 8, true], [black, 4, true], [black, 5, fail], [black, 6, true]],
+[[red, 9, true], [red, 2, fail], [red, 8, true], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 7, true], [red, 1, true], [red, 8, true], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 7, true], [red, 3, true], [red, 8, true], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 7, true], [red, 9, true], [red, 8, true], [black, 4, true], [black, 5, fail], [black, 6, true]],
+[[red, 7, true], [red, 2, fail], [red, 1, true], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 7, true], [red, 2, fail], [red, 3, true], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 7, true], [red, 2, fail], [red, 9, true], [black, 4, true], [black, 5, fail], [black, 6, true]]
+], 
+
+[
+[[red, 1, true], [red, 2, fail], [red, 9, true], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 3, true], [red, 2, fail], [red, 9, true], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 8, true], [red, 2, fail], [red, 9, true], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 7, true], [red, 1, true], [red, 9, true], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 7, true], [red, 3, true], [red, 9, true], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 7, true], [red, 8, true], [red, 9, true], [black, 4, true], [black, 5, fail], [black, 6, true]],
+[[red, 7, true], [red, 2, fail], [red, 1, true], [black, 4, true], [black, 5, fail], [black, 6, true]],
+[[red, 7, true], [red, 2, fail], [red, 3, true], [black, 4, true], [black, 5, fail], [black, 6, true]],
+[[red, 7, true], [red, 2, fail], [red, 8, true], [black, 4, true], [black, 5, fail], [black, 6, true]]
+]
+
+]

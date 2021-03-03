@@ -1,0 +1,8 @@
+predicates
+nondeterm like(symbol,symbol)
+clauses
+like(ahmed,chess).
+like(ahmed,food).
+like(ahmed,mona).
+goal
+like(ahmed,X).

@@ -1,0 +1,31 @@
+<taglib>
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>2.0</jsp-version>
+	<short-name>Simple</short-name>
+	<tag>
+		<name>Hello</name>
+		<tag-class>com.marmoush.javaexamples.ocejwcd.chp18.simple.HelloTag
+		</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+	<tag>
+		<name>MyConditionalTag</name>
+		<tag-class>com.marmoush.javaexamples.ocejwcd.chp18.simple.MyConditionalTag
+		</tag-class>
+		<!-- Simple tags always have content "scriptless" unless "empty" -->
+		<body-content>scriptless</body-content>
+		<attribute>
+			<name>test</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>boolean</type>
+		</attribute>
+		<attribute>
+			<name>frag</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>javax.servlet.jsp.tagext.JspFragment</type>
+			<fragment>true</fragment>
+		</attribute>
+	</tag>
+</taglib>

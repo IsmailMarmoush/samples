@@ -1,0 +1,18 @@
+predicates
+nondeterm parent(symbol,symbol)
+nondeterm predec(symbol,symbol)
+clauses
+parent(marmoush,twfee2).
+parent(marmoush,yousef).
+parent(marmoush,bakr).
+parent(marmoush,mona).
+parent(twfee2,shahera).
+parent(yousef,basma).
+parent(bakr,rana).
+parent(mona,aya).
+parent(shahera,yousef2).
+parent(aya,farida).
+predec(X,Z):-parent(X,Z).
+predec(X,Z):-parent(X,Y),predec(Y,Z).
+goal
+predec(marmoush,H).

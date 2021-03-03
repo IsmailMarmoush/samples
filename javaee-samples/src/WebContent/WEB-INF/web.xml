@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" -->
+<!-- xmlns="http://java.sun.com/xml/ns/javaee" -->
+<!-- xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" -->
+<!-- id="WebApp_ID" version="3.0"> -->
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+
+	<display-name>javasamples</display-name>
+	<context-param>
+		<description>hello</description>
+		<description>hi</description>
+		<param-name>hi</param-name>
+		<param-value>hello</param-value>
+	</context-param>
+	<listener>
+		<listener-class>com.marmoush.javaexamples.MyContextListener</listener-class>
+	</listener>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	<security-constraint>
+
+		<web-resource-collection>
+			<web-resource-name>Secure Application</web-resource-name>
+			<url-pattern>/ocejwcdasdfads/*</url-pattern>
+			<!-- <http-method>GET</http-method> -->
+			<!-- <http-method>POST</http-method> -->
+		</web-resource-collection>
+		<!-- Omitting the following means grant access to everyone auth or not -->
+		<auth-constraint>
+			<role-name>Users</role-name>
+		</auth-constraint>
+		<user-data-constraint>
+			<transport-guarantee>NONE</transport-guarantee>
+		</user-data-constraint>
+
+	</security-constraint>
+
+	<jsp-config>
+
+	</jsp-config>
+	<post-construct>
+		<lifecycle-callback-class>asdf</lifecycle-callback-class>
+		<lifecycle-callback-method>sad</lifecycle-callback-method>
+	</post-construct>
+	<post-construct>
+		<lifecycle-callback-class>asdf</lifecycle-callback-class>
+		<lifecycle-callback-method>sad</lifecycle-callback-method>
+	</post-construct>
+	<!-- <login-config> <auth-method>CLIENT-CERT</auth-method> <realm-name>file</realm-name> 
+		</login-config> -->
+	<login-config>
+		<auth-method>FORM</auth-method>
+		<form-login-config>
+			<form-login-page>/ocejwcd/login.html</form-login-page>
+			<form-error-page>/ocejwcd/login.html</form-error-page>
+		</form-login-config>
+	</login-config>
+
+	<security-role>
+		<role-name>Users</role-name>
+	</security-role>
+
+</web-app>

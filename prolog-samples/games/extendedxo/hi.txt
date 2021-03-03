@@ -1,0 +1,49 @@
+
+flat2([],[]).
+flat2([Node|Rest],[Node2|Rest2]):-flat2(Rest,Rest).
+
+[[0, 1, [[red, 7, true], [red, 2, fail], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]]]]
+
+[[
+[1, 9, [[red, 1, true], [red, 2, fail], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]]], 
+[1, 8, [[red, 8, true], [red, 2, fail], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]]], 
+[1, 7, [[red, 9, true], [red, 2, fail], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]]], 
+[1, 6, [[red, 7, true], [red, 1, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]]],
+[1, 5, [[red, 7, true], [red, 8, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]]],
+[1, 4, [[red, 7, true], [red, 9, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]]], 
+[1, 3, [[red, 7, true], [red, 2, fail], [red, 1, true], [black, 4, true], [black, 5, fail], [black, 6, true]]], 
+[1, 2, [[red, 7, true], [red, 2, fail], [red, 8, true], [black, 4, true], [black, 5, fail], [black, 6, true]]], 
+[1, 1, [[red, 7, true], [red, 2, fail], [red, 9, true], [black, 4, true], [black, 5, fail], [black, 6, true]]]
+]]
+
+
+level2
+[
+
+[
+[1, 9, [[red, 1, true], [red, 2, fail], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]]], 
+[1, 8, [[red, 8, true], [red, 2, fail], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]]],
+[1, 7, [[red, 9, true], [red, 2, fail], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]]],
+[1, 6, [[red, 7, true], [red, 1, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]]],
+[1, 5, [[red, 7, true], [red, 8, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]]],
+[1, 4, [[red, 7, true], [red, 9, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]]],
+[1, 3, [[red, 7, true], [red, 2, fail], [red, 1, true], [black, 4, true], [black, 5, fail], [black, 6, true]]],
+[1, 2, [[red, 7, true], [red, 2, fail], [red, 8, true], [black, 4, true], [black, 5, fail], [black, 6, true]]],
+[1, 1, [[red, 7, true], [red, 2, fail], [red, 9, true], [black, 4, true], [black, 5, fail], [black, 6, true]]]
+],
+
+
+[
+[1, 9, [[red, 1, true], [red, 2, fail], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]]], 
+[1, 8, [[red, 8, true], [red, 2, fail], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]]], 
+[1, 7, [[red, 9, true], [red, 2, fail], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]]], 
+[1, 6, [[red, 7, true], [red, 1, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]]], 
+[1, 5, [[red, 7, true], [red, 8, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]]], 
+[1, 4, [[red, 7, true], [red, 9, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]]], 
+[1, 3, [[red, 7, true], [red, 2, fail], [red, 1, true], [black, 4, true], [black, 5, fail], [black, 6, true]]], 
+[1, 2, [[red, 7, true], [red, 2, fail], [red, 8, true], [black, 4, true], [black, 5, fail], [black, 6, true]]], 
+[1, 1, [[red, 7, true], [red, 2, fail], [red, 9, true], [black, 4, true], [black, 5, fail], [black, 6, true]]]
+]
+
+
+]

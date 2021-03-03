@@ -1,0 +1,11 @@
+domains
+list=integer*
+predicates
+nondeterm number(list,integer)
+clauses
+%number([],0).
+number([],0).
+number([H|T],L):-number(T,M),write("head=",H),write("  ",T),L=M+1,write(" M=",M," L=",L," \n").
+
+goal
+number([10,20,30,40,50,60],K),write(K).

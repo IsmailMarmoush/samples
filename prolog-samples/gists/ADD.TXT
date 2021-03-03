@@ -1,0 +1,8 @@
+domains
+list=integer*
+predicates
+nondeterm add(integer,list,list)
+clauses
+add(X,L,[X|L]).
+goal
+add(10,[3,4,5,6],Z).

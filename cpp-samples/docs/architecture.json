@@ -1,0 +1,13 @@
+{
+    "Stage":"alpha",
+	
+	"Description":"A Set of small projects and code bits.",
+	
+	"Modules":{
+	    "Small Projects":[ "Palindrome Numbers", "Prime Numbers", "Roman Numbers", "Combination Numbers"]
+	},
+	
+	"License":"Affero GPL",
+	"LicenseIcon": "http://www.gnu.org/graphics/agplv3-155x51.png",
+	"Repository":"https://github.com/IsmailMarmoush/cpp-samples"
+}

@@ -1,0 +1,44 @@
+domains
+town=symbol
+distance=integer
+predicates
+nondeterm road(town,town,distance)
+nondeterm route(town,town,distance)
+clauses
+road(arad,zerind,75).
+road(arad,sibiu,140).
+road(arad,timisoara,118).
+road(zerind,oradea,71).
+road(oradea,sibiu,151).
+road(sibiu,fagaras,99).
+road(fagaras,bucharest,211).
+road(bucharest,giurgiu,90).
+road(bucharest,urziceni,85).
+road(urziceni,hirsova,98).
+road(urziceni,vaslui,142).
+road(hirsova,eforie,86).
+road(vaslui,lasi,92).
+road(lasi,neamt,87).
+road(sibiu,rimnicu,80).
+road(rimnicu,pitesti,97).
+road(rimnicu,craiova,146).
+road(pitesti,craiova,138).
+road(pitesti,bucharest,101).
+road(timisoara,lugoj,111).
+road(lugoj,mehadia,70).
+road(mehadia,dobreta,75).
+road(dobreta,craiova,120).
+route(T1,T2,D):-road(T1,T2,D);road(T2,T1,D).	%,write("from *",T1," to ",T2,"= ",D,"\n"),write("from * ",T2," to ",T1,"= ",D,"\n").
+route(T1,T2,D):-road(T1,S,D1),
+		route(S,T2,D2),
+		D=D1+D2,
+		%write("from ",T1," to ",S,"= ",D1,"\n"),
+		%write("from ",S," to ",T2,"= ",D2,"\n"),
+		write("from ",T1," to ",T2,"= ",D,"\n").
+route(T2,T1,D):-road(T2,S,D1),
+		route(S,T1,D2),
+		D=D1+D2,
+		write("from * ",T2," to ",T1,"= ",D,"\n").
+
+goal
+route(arad,eforie,Z).

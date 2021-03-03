@@ -1,0 +1,6 @@
+{
+	"ImportPath": "github.com/ismailmarmoush/go-samples",
+	"GoVersion": "go1.10",
+	"GodepVersion": "v80",
+	"Deps": []
+}

@@ -1,0 +1,9 @@
+domains
+list=integer*
+predicates
+writelist(list)
+clauses
+writelist([]).
+writelist([H|T]):-write(H),writelist(T).
+goal
+writelist([1,2,3]).

@@ -1,0 +1,69 @@
+---
+version: "3.4"
+
+networks:
+  consul_network:
+
+volumes:
+  consul:
+
+services:
+  server:
+    image: consul:latest
+    volumes:
+    - consul:/consul
+    ports:
+    - target: 8500
+      published: 8500
+      mode: host
+    networks:
+      consul_network:
+        aliases:
+        - consul.cluster
+    environment:
+    - 'CONSUL_LOCAL_CONFIG={
+      "skip_leave_on_interrupt": true,
+      "data_dir":"/consul/data", 
+      "server":true }'
+    - CONSUL_BIND_INTERFACE=eth0
+    - CONSUL_HTTP_TOKEN=consul_http_token
+    command: agent -ui -data-dir /consul/data -server -client 0.0.0.0 -bootstrap-expect=3 -retry-join consul.cluster
+    deploy:
+      endpoint_mode: dnsrr
+      mode: global
+      placement:
+        constraints: [node.role ==  manager]
+
+  client:
+    image: consul:latest
+    volumes:
+    - consul:/consul
+    networks:
+      consul_network:
+        aliases:
+        - consul.client.cluster
+    environment:
+    - 'CONSUL_LOCAL_CONFIG={
+      "skip_leave_on_interrupt": true,
+      "data_dir":"/consul/data"
+      }'
+    - CONSUL_BIND_INTERFACE=eth0
+    - CONSUL_HTTP_TOKEN=consul_http_token
+    command: agent -ui -data-dir /consul/data -client 0.0.0.0 -retry-join consul.cluster
+    deploy:
+      endpoint_mode: dnsrr
+      mode: global
+      placement:
+        constraints: [node.role !=  manager]
+
+  registrator:
+    image: gliderlabs/registrator:latest
+    command: -internal -cleanup -resync=10 consul://consul.cluster:8500
+    volumes:
+    - /var/run/docker.sock:/tmp/docker.sock
+    networks:
+    - consul_network
+    environment:
+    - CONSUL_HTTP_TOKEN=consul_http_token
+    deploy:
+      mode: global

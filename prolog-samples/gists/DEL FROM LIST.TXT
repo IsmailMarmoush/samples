@@ -1,0 +1,10 @@
+domains
+list=integer*
+int=integer
+predicates
+del(int,list,list)
+clauses
+del(X,[X|T],T):-!.
+del(X,[H|T],[H|T2]):-del(X,T,T2).
+goal
+readint(X),del(X,[2,3,1,4,5],L).

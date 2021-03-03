@@ -1,0 +1,48 @@
+**Introduction**
+Variables used to be synchronised with the calling jsp.
+
+**name-given=”output_name”**
+
+* declares the name of scoped attribute to be defined in the calling jsp.
+* also the name of the local attribute in the tag file whose value is to be synchronised
+
+**name-from-attribute=”action_attribute_name”**
+
+* declares the name of scoped attribute to be defined in the calling jsp.
+* that name is from the translation time value of the attribute called action_attribute_name. !!
+* this attribute should have following attributes set
+    1. required=”true”
+    2. rtexprvalue=”false”
+    3. type=”java.lang.String”
+* translation error will occur if the previous action_attribute_name wasn’t defined or is not set as mentioned
+* the following alias should be also there or translation error will occur
+
+**alias=”local_name”**
+
+* declares the name of the locally scoped attribute to hold the value of that variable.
+* required along with name-from-attribute translation error will happen if not.
+
+**variable-class**
+
+* default is java.lang.String
+* fully qualified name of the class of this variable.
+* no primitives permitted
+
+**declare**
+
+* if require container to create this variable if it doesn’t already exist, use true.
+* if you rely on it already existing use false.
+
+**description**
+
+* textual description, has limited use in assembly and deployment.
+
+**scope**
+
+* this is the synchronisation scope not (page, request etc ) scopes
+* page scope is always used btw
+* AT_BEGIN
+* AT_END
+* NESTED (default)
+* Synchronisation here is  different from last chapter: synchronisation here is between scoped attributes in the tag file and scoped attributes in the calling jsp. 
+* In the last chapter synchronisation was between scoped attributes(available concurrently in both tag handler and the calling jsp) and jsp scripting variables in the calling jsp.

@@ -1,0 +1,13 @@
+domains
+list=integer*
+predicates
+nondeterm alessx(list,list)
+nondeterm aless(string,string)
+%nondeterm name(string,list)
+clauses
+aless(X,Y):- name(X,L), name(Y,M),alessx(L,M).
+alessx([],[_|_]).
+alessx([X|_],[Y|_]):-X<Y.
+alessx([P|Q],[R|S]):-P=R,alessx(Q,S).
+goal
+aless(hello,bye).

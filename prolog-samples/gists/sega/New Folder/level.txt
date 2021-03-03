@@ -1,0 +1,20 @@
+[
+[[red, 1, true], [red, 2, fail], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 8, true], [red, 2, fail], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 9, true], [red, 2, fail], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 7, true], [red, 1, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 7, true], [red, 8, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 7, true], [red, 9, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 7, true], [red, 2, fail], [red, 1, true], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 7, true], [red, 2, fail], [red, 8, true], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[[red, 7, true], [red, 2, fail], [red, 9, true], [black, 4, true], [black, 5, fail], [black, 6, true]], 
+[3, 18, [[red, 1, true], [red, 2, fail], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]]],
+ [3, 17, [[red, 8, true], [red, 2, fail], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]]],
+ [3, 16, [[red, 9, true], [red, 2, fail], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]]], 
+[3, 15, [[red, 7, true], [red, 1, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]]], 
+[3, 14, [[red, 7, true], [red, 8, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]]],
+ [3, 13, [[red, 7, true], [red, 9, true], [red, 3, fail], [black, 4, true], [black, 5, fail], [black, 6, true]]],
+ [3, 12, [[red, 7, true], [red, 2, fail], [red, 1, true], [black, 4, true], [black, 5, fail], [black, 6, true]]], 
+[3, 11, [[red, 7, true], [red, 2, fail], [red, 8, true], [black, 4, true], [black, 5, fail], [black, 6, true]]], 
+[3, 10, [[red, 7, true], [red, 2, fail], [red, 9, true], [black, 4, true], [black, 5, fail], [black, 6, true]]]
+]

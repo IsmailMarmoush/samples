@@ -1,0 +1,14 @@
+predicates
+nondeterm equation(integer,integer,integer,integer,integer,integer,integer,integer)
+
+clauses
+equation(A1,B1,C1,A2,B2,C2,X,Y):-X=(B1*B2-C2*B1)/(A1*B2-A2*B1),Y=(A1*C2-A2*C1)/(A1*B2-A2*B1),!.
+goal
+
+readint(A1),
+readint(B1),
+readint(C1),
+readint(A2),
+readint(B2),
+readint(C2),
+equation(A1,B1,C1,A2,B2,C2,X,Y).

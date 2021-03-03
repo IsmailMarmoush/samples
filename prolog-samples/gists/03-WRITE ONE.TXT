@@ -1,0 +1,7 @@
+predicates
+fad(integer,integer)
+clauses
+fad(1,1):-write("one").
+fad(2,2):-write("two").
+goal
+readint(X),fad(X,Y).

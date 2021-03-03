@@ -1,0 +1,78 @@
+<taglib>
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>2.0</jsp-version>
+	<short-name>Example TLD</short-name>
+	<function>
+        <name>hi</name>
+        <function-class>com.marmoush.javaexamples.ocejwcd.chp15.MyExchangeClass</function-class>
+        <function-signature>java.lang.String hi()</function-signature>
+    </function>
+	<tag>
+		<name>MyConditionalTag</name>
+		<tag-class>com.marmoush.javaexamples.ocejwcd.chp18.classic.MyConditionalTag
+		</tag-class>
+		<!-- Simple tags always have content "scriptless" unless "empty" -->
+		<body-content>scriptless</body-content>
+		<attribute>
+			<name>test</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>boolean</type>
+		</attribute>
+	</tag>
+	<tag >
+		<name>MyForTag</name>
+		<tag-class>com.marmoush.javaexamples.ocejwcd.chp18.classic.MyForTag
+		</tag-class>
+		<!-- Simple tags always have content "scriptless" unless "empty" -->
+		<body-content>scriptless</body-content>
+		<!-- No need to declare <variable> here: cannot use JSP scripting in simple tags 
+			anyway -->
+		<attribute>
+			<name>start</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>int</type>
+		</attribute>
+		<attribute>
+			<name>end</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>int</type>
+		</attribute>
+		<attribute>
+			<name>step</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<type>int</type>
+		</attribute>
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>
+		<name>selectCountryTag</name>
+		<tag-class>com.marmoush.javaexamples.ocejwcd.chp18.classic.SelectCountryTag
+		</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>lang</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>select</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<dynamic-attributes>true</dynamic-attributes>
+	</tag>
+	<tag>
+		<name>MyBodyTag</name>
+		<tag-class>com.marmoush.javaexamples.ocejwcd.chp18.classic.MyBodyTag
+		</tag-class>
+
+	</tag>
+</taglib>

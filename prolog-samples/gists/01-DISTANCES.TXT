@@ -1,0 +1,16 @@
+domains
+town=symbol
+distance=integer
+predicates
+nondeterm road(town,town,distance)
+nondeterm route(town,town,distance)
+clauses
+road(tampa,houston,200).
+road(gordon,tampa,300).
+road(houston,gordon,100).
+road(houston,kansas,120).
+road(gordon,kansas,130).
+route(T1,T2,D):-road(T2,T1,D).
+route(A,B,D):-road(A,X,D1),road(X,B,D2),D=D1+D2,!.
+goal
+route(tampa,kansas,Z).
